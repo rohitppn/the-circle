@@ -40,7 +40,7 @@ export default function LikeButton({ userId, postId, currentUser }) {
       <div className="like-comment">
         <div className="likes-comment-inner" onClick={handleLike}>
           {liked ? (
-            <BsFillHandThumbsUpFill size={30} color="#0a66c2" />
+            <BsFillHandThumbsUpFill size={30} color="#c20a32" />
           ) : (
             <BsHandThumbsUp size={30} />
           )}
@@ -54,11 +54,11 @@ export default function LikeButton({ userId, postId, currentUser }) {
           {
             <AiOutlineComment
               size={30}
-              color={showCommentBox ? "#0a66c2" : "#212121"}
+              color={showCommentBox ? "#c20a0a" : "#212121"}
             />
           }
 
-          <p className={showCommentBox ? "blue" : "black"}>Comments</p>
+          <p className={showCommentBox ? "red" : "black"}>Comments</p>
         </div>
       </div>
       {showCommentBox ? (
